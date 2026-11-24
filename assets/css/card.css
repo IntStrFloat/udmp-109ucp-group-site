@@ -1,0 +1,72 @@
+/* card.css — персональная карточка студента */
+
+.card-page { max-width: 860px; }
+
+/* Шапка карточки: фото + имя */
+.card__head {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 8px 0 4px;
+}
+
+.card__photo {
+  flex: none;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.card__photo--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.card__name { font-size: 36px; margin: 0 0 6px; }
+.card__role { color: var(--muted); font-size: 18px; margin: 0; }
+
+/* Секции карточки */
+.card__section { margin-top: 40px; }
+.card__section h2 { font-size: 22px; margin: 0 0 14px; }
+.card__section p { margin: 0 0 12px; max-width: 760px; }
+
+/* Ссылка возврата к составу */
+.card-back { margin-top: 44px; }
+
+.card-back a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.card-back a:hover { color: var(--accent); }
+
+/*
+ * Зона свободного HTML.
+ * «Голые» теги уже оформлены: пиши h2, p, ul, img, a — и выглядит аккуратно.
+ */
+.free {
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+  padding-top: 30px;
+}
+
+.free h2 { font-size: 22px; margin: 0 0 14px; }
+.free h3 { font-size: 18px; margin: 16px 0 8px; }
+
+.free p { margin: 0 0 12px; max-width: 760px; }
+
+.free ul, .free ol { margin: 0 0 16px; padding-left: 22px; max-width: 760px; }
+.free li { margin-bottom: 8px; }
+
+.free a { color: var(--accent); }
+.free a:hover { text-decoration: underline; }
+
+.free img { border-radius: var(--radius); }
+
+.free .btn { margin-top: 8px; }

@@ -1,0 +1,83 @@
+<!doctype html>
+<!--
+  ШАБЛОН ПЕРСОНАЛЬНОЙ КАРТОЧКИ.
+
+  1. Скопируйте всю папку _template в team/<фамилия латиницей>.
+  2. Заполните анкету в конце файла — карточка соберётся сама.
+  3. По желанию используйте зону свободного HTML и свои стили/скрипты.
+
+  Подробная инструкция — в файле ЗАПОЛНЕНИЕ-КАРТОЧКИ.md рядом.
+  Заполненный пример — team/krokhin/
+-->
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Фамилия Имя — группа УДМП-109уцп</title>
+  <meta name="site-root" content="../../">
+  <link rel="icon" href="../../assets/img/logo.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/card.css">
+
+  <script src="../../assets/js/components.js" defer></script>
+  <script src="../../assets/js/card.js" defer></script>
+
+  <!-- ====== СВОИ СТИЛИ (необязательно) ====== -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <!-- ====== СВОИ СКРИПТЫ И БИБЛИОТЕКИ (необязательно) ====== -->
+  <!-- Например, jQuery с CDN:
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  -->
+</head>
+
+<body data-page="card">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <site-header></site-header>
+
+  <main id="main">
+    <div class="container card-page">
+
+      <!-- Сюда card.js собирает карточку из анкеты в конце файла -->
+      <div id="card-data"></div>
+
+      <!-- ====== ЗОНА СВОБОДНОГО HTML (необязательно) ======
+           Пишите обычные теги: h2, p, ul, img, a — они уже оформлены.
+           Не нужна — удалите весь div целиком. -->
+      <div class="free">
+        <h2>Например: мои проекты</h2>
+        <p>Сюда можно написать что угодно обычными тегами HTML.</p>
+        <ul>
+          <li>Проект первый</li>
+          <li>Проект второй</li>
+        </ul>
+      </div>
+
+      <p class="card-back"><a href="../index.html">← К составу группы</a></p>
+    </div>
+  </main>
+
+  <site-footer></site-footer>
+
+  <!-- ====== АНКЕТА ======
+       photo — путь к файлу фото ОТ КОРНЯ сайта,
+       например "team/ivanov/photo.jpg". Нет фото — оставьте "". -->
+  <script type="application/json" data-student>
+  {
+    "name": "Фамилия Имя",
+    "role": "Например: Fullstack-разработчик",
+    "photo": "",
+    "about": "Два-три предложения о себе: чем занимаетесь, что нравится, какие планы.",
+    "skills": ["Навык 1", "Навык 2", "Навык 3"],
+    "contacts": {
+      "email": "you@example.com",
+      "telegram": "@nickname",
+      "github": "username"
+    }
+  }
+  </script>
+</body>
+</html>

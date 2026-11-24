@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Крохин Владимир — группа УДМП-109уцп</title>
+  <meta name="description"
+        content="Персональная карточка: Крохин Владимир, fullstack-разработчик (Python + Vue).">
+  <meta name="site-root" content="../../">
+  <link rel="icon" href="../../assets/img/logo.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/card.css">
+
+  <script src="../../assets/js/components.js" defer></script>
+  <script src="../../assets/js/card.js" defer></script>
+</head>
+
+<body data-page="card">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <site-header></site-header>
+
+  <main id="main">
+    <div class="container card-page">
+
+      <!-- Сюда card.js собирает карточку из анкеты ниже -->
+      <div id="card-data"></div>
+
+      <!-- Зона свободного HTML: оформлена базовыми стилями -->
+      <div class="free">
+        <h2>Опыт работы</h2>
+
+        <h3>Разработчик · «Гринатом», Москва</h3>
+        <p>Февраль 2025 — сентябрь 2026 · 1 год 8 месяцев · системная
+          интеграция, финансовый сектор</p>
+        <ul>
+          <li>Разрабатывал ядро FinTech-системы со сложными финансовыми
+            алгоритмами при высокой транзакционной нагрузке.</li>
+          <li>Оптимизировал и рефакторил базы данных PostgreSQL: изменение
+            схем, целостность данных.</li>
+          <li>Рефакторил legacy-код, повышая отказоустойчивость и
+            производительность модулей.</li>
+          <li>Реализовывал fullstack-функции «под ключ» — от бэкенда до
+            интерфейса.</li>
+          <li>Работал с аналитиками над требованиями и технической оценкой
+            задач.</li>
+        </ul>
+
+        <h3>Инженер-программист · ФГУП «Комбинат Электрохимприбор», Лесной</h3>
+        <p>Июнь 2024 — январь 2025 · 8 месяцев</p>
+        <ul>
+          <li>Спроектировал ETL-инструмент для автоматизации валидации
+            миграции схем данных MS SQL → PostgreSQL.</li>
+          <li>Разработал защищённый модуль хранения конфиденциальных файлов
+            (ДСП) в изолированном сетевом контуре.</li>
+          <li>Внедрил систему KPI для отслеживания прогресса миграции.</li>
+          <li><b>Итоги:</b> 500+ схем и 10 000 таблиц проверяются за 15 минут;
+            выявлено 30 % несовместимых объектов; 100 % целостность данных за
+            счёт кастомных правил маппинга.</li>
+        </ul>
+
+        <h2>Образование</h2>
+        <ul>
+          <li><b>НИЯУ МИФИ, 2026</b> — бакалавриат, 09.03.01 «Информатика и
+            вычислительная техника».</li>
+          <li><b>Магистратура, 2025—2027</b> — 09.04.01 «Прикладная
+            информатика», профиль «Управление цифровыми проектами, продуктами
+            и инновациями».</li>
+          <li><b>«Основы Linux», 2023</b> — Диджитал Центр НИЯУ МИФИ.</li>
+          <li><b>«DevSecOps и CI/CD», 2023</b> — Университет «Сириус»:
+            безопасная разработка для критической информационной
+            инфраструктуры.</li>
+        </ul>
+
+        <h2>Стек подробнее</h2>
+        <ul>
+          <li><b>Языки:</b> Python, JavaScript, SQL, Bash.</li>
+          <li><b>Backend:</b> Django, DRF, FastAPI, Flask, SQLAlchemy, Celery,
+            aiogram, Frappe, SocketIO, REST API.</li>
+          <li><b>Frontend:</b> HTML, CSS, jQuery, Vue.js.</li>
+          <li><b>Базы данных:</b> PostgreSQL, MS SQL, Redis, MariaDB,
+            Supabase.</li>
+          <li><b>Инструменты:</b> Linux, Debian, Docker, docker-compose,
+            Nginx, Git, GitLab, GitHub, uv, pytest.</li>
+        </ul>
+
+        <h2>Языки</h2>
+        <p>Русский — родной. Английский — B2 (средне-продвинутый).</p>
+
+        <h2>Проекты</h2>
+        <ul>
+          <li><b>Система для курьерской службы</b> — Python, PostgreSQL,
+            Vue.js.</li>
+          <li><b>Система для сети пекарен</b> — Frappe Framework,
+            PostgreSQL.</li>
+          <li><b>ETL-валидация миграции схем данных</b> — Python, Django,
+            Celery: 500+ схем и 10 000 таблиц, проверка за 15 минут.</li>
+          <li><b>Ядро FinTech-системы</b> — финансовые алгоритмы под высокой
+            транзакционной нагрузкой.</li>
+          <li><b>Защищённое хранилище конфиденциальных файлов</b> — Python,
+            Django, изолированный сетевой контур.</li>
+        </ul>
+      </div>
+
+      <p class="card-back"><a href="../index.html">← К составу группы</a></p>
+    </div>
+  </main>
+
+  <site-footer></site-footer>
+
+  <!-- Анкета: card.js строит по ней фото, имя, «О себе», навыки и контакты -->
+  <script type="application/json" data-student>
+  {
+    "name": "Крохин Владимир",
+    "role": "Fullstack-разработчик (Python + Vue)",
+    "photo": "assets/img/krokhin.svg",
+    "about": "22 года, Екатеринбург. Бакалавриат по разработке ПО закончил в филиале НИЯУ МИФИ, сейчас — магистратура 09.04.01 «Прикладная информатика».\n\nПишу веб-приложения: бэкенд — Python/PostgreSQL, фронтенд — Vue.js. Много работаю с Frappe Framework — low-code/no-code подход и богатая экосистема позволяют быстро собирать приложения. Изучаю Supabase: нравится писать логику внутри СУБД — близость к данным и целостность. Интересуюсь ERP/MRP/MES-системами; ограничений по стеку нет — нужно будет, освою.\n\nОколо двух лет коммерческого опыта: писал служебные утилиты для архивной службы, поддерживал казначейскую систему крупной госкорпорации. Параллельно с учёбой веду два собственных проекта — для курьерской службы и сети пекарен Екатеринбурга. Направление выбрал из-за его стыка с управлением: на практике убедился, что управление в разработке — вещь важная.\n\nОткрыт к предложениям по работе и совместным проектам.",
+    "skills": [
+      "Python",
+      "PostgreSQL",
+      "Vue.js",
+      "Frappe",
+      "Django / FastAPI",
+      "Supabase",
+      "Docker",
+      "Git"
+    ],
+    "contacts": {
+      "email": "krokhinvladimir2004@gmail.com",
+      "telegram": "@keikakudori",
+      "github": "VladimirKrokhin"
+    }
+  }
+  </script>
+</body>
+</html>

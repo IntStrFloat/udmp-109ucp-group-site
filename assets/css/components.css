@@ -1,0 +1,248 @@
+/* components.css — кнопки, бейджи, карточки, списки, таблицы */
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--primary { background: var(--accent); color: #fff; }
+.btn--primary:hover { background: var(--accent-dark); }
+
+.btn--ghost {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+.btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Бейджи навыков */
+.badge {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Плашка-заглушка */
+.plaque {
+  display: inline-block;
+  padding: 2px 12px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Факты о группе */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  margin: 0;
+}
+
+.facts > div {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 20px;
+}
+
+.facts dt {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+.facts dd { margin: 0; font-weight: 500; }
+
+/* Карточки перехода */
+.nav-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.nav-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-card:hover { border-color: var(--accent); }
+
+.nav-card h3 { margin: 0 0 8px; font-size: 20px; }
+.nav-card p { margin: 0 0 16px; color: var(--muted); }
+
+.nav-card__arrow {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Заголовок секции со ссылкой справа */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.section-head h2 { margin: 0; }
+
+.more-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.more-link:hover { text-decoration: underline; }
+
+/* Сетка состава */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.member {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.member__photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.member__photo--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.member__name { margin: 0 0 4px; font-size: 18px; }
+.member__role { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+
+.member__tag {
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.member__link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.member__link:hover { text-decoration: underline; }
+
+/* Списки: контакты группы, полезные ссылки */
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  max-width: 640px;
+}
+
+.link-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 12px 18px;
+}
+
+.link-list .label { color: var(--muted); }
+
+.link-list a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.link-list a:hover { text-decoration: underline; }
+
+/* Таблица фактов на странице информации */
+.table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  max-width: 760px;
+}
+
+.table { width: 100%; border-collapse: collapse; }
+
+.table th {
+  text-align: left;
+  vertical-align: top;
+  width: 220px;
+  padding: 14px 20px;
+  background: #fafbfc;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.table tr:last-child th,
+.table tr:last-child td { border-bottom: none; }
+
+/* Сообщение об ошибке в анкете */
+.card-error {
+  border: 1px solid #f1b8b3;
+  background: #fdeceb;
+  color: var(--danger);
+  padding: 14px 18px;
+  border-radius: 10px;
+}

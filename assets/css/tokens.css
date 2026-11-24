@@ -1,0 +1,20 @@
+/* tokens.css — переменные оформления: менять дизайн можно только здесь */
+
+:root {
+  --bg: #f5f7f9;
+  --surface: #ffffff;
+  --border: #dbe2e9;
+  --text: #1c2733;
+  --muted: #5d6b7a;
+  --accent: #0f766e;
+  --accent-dark: #0c5f58;
+  --accent-soft: #e4f1ef;
+  --danger: #b42318;
+
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(28, 39, 51, 0.07);
+  --gap: 24px;
+  --container: 1120px;
+
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}

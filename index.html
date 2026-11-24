@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Группа УДМП-109уцп — Синергия</title>
+  <meta name="description"
+        content="Сайт учебной группы УДМП-109уцп: информация о группе и персональные карточки студентов.">
+  <meta name="site-root" content="./">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/roster.js" defer></script>
+</head>
+
+<body data-page="home">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <site-header></site-header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Магистратура · Московский университет „Синергия“</p>
+        <h1>Учебная группа УДМП-109уцп</h1>
+        <p class="lead">
+          Направление 09.04.01 «Прикладная информатика», профиль
+          «Управление цифровыми проектами, продуктами и инновациями».
+          Здесь собрано всё важное о нашей группе и карточки каждого студента.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Факты о группе</h2>
+        <dl class="facts">
+          <div>
+            <dt>Университет</dt>
+            <dd>АНО ВО «Московский университет „Синергия“»</dd>
+          </div>
+          <div>
+            <dt>Кафедра</dt>
+            <dd>ИМ им. В.В. Дика</dd>
+          </div>
+          <div>
+            <dt>Форма обучения</dt>
+            <dd>Очная</dd>
+          </div>
+          <div>
+            <dt>Куратор</dt>
+            <dd><span class="plaque">заполнить</span></dd>
+          </div>
+          <div>
+            <dt>Староста</dt>
+            <dd><span class="plaque">заполнить</span></dd>
+          </div>
+          <div>
+            <dt>Студентов</dt>
+            <dd><span class="plaque">заполнить</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="nav-cards">
+          <a class="nav-card" href="info/index.html">
+            <h3>Информация о группе</h3>
+            <p>Учёба, кафедра, контакты группы и полезные ссылки.</p>
+            <span class="nav-card__arrow">Открыть →</span>
+          </a>
+          <a class="nav-card" href="team/index.html">
+            <h3>Состав группы</h3>
+            <p>Персональные карточки студентов: навыки, проекты, контакты.</p>
+            <span class="nav-card__arrow">Открыть →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Из состава группы</h2>
+          <a class="more-link" href="team/index.html">Весь состав →</a>
+        </div>
+        <div class="team-grid" data-roster data-limit="4"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer></site-footer>
+</body>
+</html>
