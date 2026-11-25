@@ -22,7 +22,7 @@ window.GROUP_ROSTER = [
     slug: "bereznyov",
     name: "Березнёв Дмитрий Алексеевич",
     role: "Fullstack-разработчик",
-    tag: "Python · Excel",
+    tag: "Python · JavaScript · Git",
     photo: ""
   }
 ];
